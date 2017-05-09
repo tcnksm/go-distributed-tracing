@@ -1,8 +1,10 @@
-# Distributed tracing in Golang
+# Distributed tracing for Golang
+
+This repository contains sample k8s config and golang microservices apps to try distributed tracing with GCP [Stackdriver trace](https://cloud.google.com/trace/). After setup, you can see the following tracing. This contains tracing example both HTTP and [gRPC](http://www.grpc.io/) requests.
 
 ![](/trace.png)
 
-This repository contains sample k8s cluster config and golang apps to try distributed tracing with GCP [Stackdriver trace](https://cloud.google.com/trace/). This is just sample for me. You can fork this repositry and modify it like you want (So don't need to send PR).
+## Usage
 
 To create k8s cluster for this,
 
@@ -26,7 +28,3 @@ $ kubectl apply -f kubernetes.yaml
 
 - [Google Cloud Platform Blog: Distributed tracing for Go](https://cloudplatform.googleblog.com/2017/04/distributed-tracing-for-Go.html)
 - [Automatic Stackdriver Tracing for gRPC · Go, the unwritten parts](https://rakyll.org/grpc-trace/)
-
-
- 
- 
