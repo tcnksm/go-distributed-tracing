@@ -6,6 +6,6 @@ if [ -z "${PROJECT_ID}" ]; then
 fi
 
 gcloud container clusters create test-trace-cluster \
-       --project $PROJECT \
+       --project $PROJECT_ID \
        --zone us-west1-b \
        --scopes default,bigquery,cloud-platform,compute-rw,datastore,logging-write,monitoring-write
